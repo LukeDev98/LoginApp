@@ -1,0 +1,32 @@
+﻿<Window x:Name="Form1" x:Class="Unit_20_assignment_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unit_20_assignment_2"
+        mc:Ignorable="d"
+        Title="Login" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="18*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="142*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="22*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="usernameBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="64,40,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Username entry box."/>
+        <Label x:Name="Title" Content="NIAP Health Care" Grid.Column="1" HorizontalAlignment="Left" Margin="52,18,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="usernameLable" Content="Username:" Grid.Column="1" HorizontalAlignment="Left" Margin="81,36,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="passwordLable" Content="Password:" Grid.Column="1" HorizontalAlignment="Left" Margin="81,79,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="2" HorizontalAlignment="Left" Margin="64,87,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Height="24" ToolTip="Password entry box."/>
+        <Button x:Name="Login_button" Content="Login" Grid.Column="2" HorizontalAlignment="Left" Margin="79,28,0,0" Grid.Row="3" VerticalAlignment="Top" Width="90" Height="27" Click="Login_button_Click" ToolTip="Login button, press when details have been entered."/>
+        <TextBox x:Name="errorBox" Grid.Column="1" HorizontalAlignment="Left" Height="54" Margin="10,10,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" ToolTip="Error message box."/>
+
+    </Grid>
+</Window>
